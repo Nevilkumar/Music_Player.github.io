@@ -1,0 +1,120 @@
+*,*::after,*::before{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+  font-size: 65%;
+  font-family: sans-serif;
+}
+.heading{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: rgb(26, 24, 24);
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-shadow: 2px 2px 8px rgb(103, 97, 114);
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(190, 213, 214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.music_container{
+    width:30rem;
+    height: 40rem;
+    background-color: rgb(7, 49, 83);
+    border-radius:2rem;
+    box-shadow: 0 0.2rem 3rem 0.5rem blue;
+    padding:1rem;
+    text-align:center;
+}
+
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: rgb(248, 245, 245);
+    margin:1rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-shadow: 2px 2px 8px black;
+}
+
+.music_container #artist{
+    color: rgb(248, 245, 245);
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.img_container{
+    width: 18rem;
+    height: 18rem;
+    margin:auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius:100%;
+    box-shadow:0 0.2rem 3rem 0.5rem blue;
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+.music_controls .fas{
+    color:black;
+    font-size: 2rem;
+    cursor: pointer;
+    filter:drop-shadow(0 0.2rem 3rem 0.5rem blue);
+}
+.music_controls .main_button{
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+    color:white;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.music_controls .fa-backward:hover{
+    background-color:rgb(7, 49, 83);
+    color: white;
+}
+.music_controls .fa-forward:hover{
+    background-color:rgb(7, 49, 83);
+    color: white;
+}
+.music_controls .fa-play:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0.2rem 3rem 0.5rem blue;
+}
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer{
+    from{ transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+}
